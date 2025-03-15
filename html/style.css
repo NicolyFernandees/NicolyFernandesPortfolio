@@ -1,0 +1,71 @@
+/*Estilo geral*/ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    background-color: #000;
+    height: 100vh; /* toma todo espaço da tela*/
+}
+/*Estilo da imagem (tamanho)*/ 
+.logo img{
+    height: auto;
+    width: 150px;
+
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/*Estilo cabeçalho*/ 
+header{
+    padding: 40px 4%;
+}
+
+header >.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* distantes um do outro*/
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+header .nicoly-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #341657;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .nicoly-contato button:hover{
+    box-shadow: 0px 0px 8px #341657e8;
+}
+
