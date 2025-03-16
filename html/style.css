@@ -3,25 +3,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;   /* estilo de fonte*/ 
 }
-
 body{
     background-color: #000;
     height: 100vh; /* toma todo espaço da tela*/
 }
+
 /*Estilo da imagem (tamanho)*/ 
 .logo img{
     height: auto;
     width: 150px;
-
 }
+
+.foto-redonda {
+    width: 350px;  
+    height: 350px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 5px solid #000;
+    margin-top: -40px; /* move a imagem para cima*/
+}
+
 
 .interface{
     max-width: 1280px;
     margin: 0 auto;
 }
+
+.flex{
+    display: flex;
+}
+
+.nicoly-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #37264a;
+    border: 0;
+    border-radius: 30px; /* deixara as bordas arredondadas*/ 
+    cursor: pointer; /* para quando passar o mouse aparecer o dedo seletor*/ 
+    transition: .2s; /* tempo de transição do botão*/ 
+}
+
 /*Estilo cabeçalho*/ 
 header{
     padding: 40px 4%;
@@ -42,7 +66,7 @@ header a{
 
 header a:hover{
     color: #fff;
-    transform: scale(1.05);
+    transform: scale(1.05); /* tamanho do botão quando vc passar o mouse*/ 
 }
 
 header nav ul{
@@ -52,20 +76,51 @@ header nav ul{
 header nav ul li{
     display: inline-block;
     padding: 0 40px;
-
 }
 
-header .nicoly-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #341657;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-header .nicoly-contato button:hover{
+.nicoly-contato button:hover{
     box-shadow: 0px 0px 8px #341657e8;
+    transform: scale(1.05);
 }
 
+/* Estilo do topo site*/
+section .topo-do-site{
+    padding: 40px 4%;
+
+}
+
+section .topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px; /* espaçamento*/ 
+}
+.topo-do-site h1{
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0%;
+}
+
+.img-topo-site{
+    padding: 20px 2%;
+    
+}
+
+section .sobre{
+    padding: 40px 4%;
+}
+
+section .sobre .flex{
+    align-items: center;
+    gap: 60px;
+    padding: 40px 4%;
+    margin: 40px;
+}
+.sobre .txt-sobre{
+    color: #fff;
+    
+}
